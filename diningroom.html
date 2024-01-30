@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+            <!-- Author: Brendan Dileo, 000879513 -->
+        
+			<title>Sandy and Leslie's apartment</title>
+
+            <link rel ="stylesheet" type = "text/css" href = "css/apartment_layout.css">
+
+            <style>
+
+                body h2 {
+                    background-color: #964B00;
+                    color: burlywood;
+                    padding: 10px;
+                    text-align: center;
+                }
+
+                body img {
+                    display: block;
+                    margin: 0 auto;
+                }
+                .appartment table {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    width: 40%;
+                    height: 10px;
+                }
+
+                .appartment h2 {
+                    text-align: left;
+                }
+
+                footer {
+                    float: left;
+                }
+
+            </style>
+    </head>
+
+
+        <header>
+
+            <h1>
+                Sandy and Leslie's Apartment
+            </h1>
+
+            <img src="images/apartmentfloorplan.jpg" alt="Apartment Floor Default" usemap="#apartmentfloorplan">
+			
+			<map name="apartmentfloorplan">
+				<area shape="rect" coords="205,11,358,160" alt="Bedroom 1" href="bedroom.html">
+				<area shape="rect" coords="55,10,192,156" alt="Bedroom 2" href="bedroom.html">
+				<area shape="rect" coords="245,235,393,395" alt="Kitchen" href="kitchen.html">
+				<area shape="circle" coords="410,140,31" alt="Dining Room" href="diningroom.html">
+				<area shape="poly" coords="422,392,405,197,475,175,524,181,545,392" alt="Living Room" href="livingroom.html">
+			</map>
+
+            <ul>
+                <li><a href="apartment.html">Apartment</a></li>
+                <li>|</li>
+                <li> <a href="bedroom.html">Bedroom 1</a></li>
+                <li>|</li>
+                <li> <a href="bedroom.html">Bedroom 2</a></li>
+                <li>|</li>
+                <li><a href ="diningroom.html">Dining Room</a></li>
+                <li>|</li>
+                <li><a href="kitchen.html">Kitchen</a></li>
+                <li>|</li>
+                <li><a href="livingroom.html">Living Room</a></li>
+            </ul>
+        </header>
+
+        <body>
+
+            <h2>
+                Dining Room Detail
+            </h2>
+
+            <img src="images/diningroom_lg.jpg" alt="Dining Room">
+            
+            <div class="appartment">
+
+                <h2>
+                    Apartment Services 
+                </h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Day/Hours</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th class="large">Gym</th>
+                            <td rowspan="2">Monday - Friday 6am - 10pm
+                                <br>
+                                Saturday 8am - 8pm
+                                <br>
+                                Sunday 8am - 5pm</td>
+                        </tr>
+
+                        <tr>
+                            <th class="large">Pool</th>
+                            <!-- <td></td> -->
+                        </tr>
+
+                        <tr>
+                            <th>Laundry</th>
+                            <td>24/7</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Please do not allow people you don't know to use the facilities</td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </div>
+        
+
+            <footer>
+                <p>
+                    For more information contact: <a href="mailto:SandyAndLeslie@example.com">SandyAndLeslie@example.com</a> or Call us <a href="tel:+1234567890">at (123) 456-7890</a>
+                </p>
+
+                <p>
+                    &copy; Sandy and Leslie 2023
+                </p>
+            </footer>
+        
+
+        </body>
+    </html>

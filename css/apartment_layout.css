@@ -1,0 +1,151 @@
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: #964B00;
+}
+
+header ul {
+    list-style-type: none;
+
+}
+
+header li {
+    display: inline;
+}
+
+.gridcontainer { 
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.survey {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.survey h2 {
+    background-color: #964B00;
+    color: burlywood;
+    padding: 10px;
+}
+
+.appartment {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+}
+
+.appartment h2 {
+    background-color: #964B00;
+    color: burlywood;
+    padding: 10px;
+}
+
+.location {
+    grid-row: 1 / span 2;
+    grid-column: 3;
+}
+
+.location h2 {
+    background-color: #964B00;
+    color: burlywood;
+    padding: 10px;
+}
+
+.welcome {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.welcome h2 {
+    background-color: #964B00;
+    color: burlywood;
+    padding: 10px;
+}
+
+.gallery {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+}
+
+.gallery h2 {
+    background-color: #964B00;
+    color: burlywood;
+    padding: 10px;
+}
+
+.buttons {
+    margin-top: 10px;
+    border-radius: 6px;
+    background-color: lightgray;
+}
+
+.appartment table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    height: 10px;
+}
+
+.appartment table tr {
+    border: 1px solid black;
+}
+
+.appartment table thead tr {
+    height: 10px;
+    background-color: lightgray;
+}
+
+.appartment table th {
+    border: 1px solid black;
+    height: 40px;
+	text-align: left;
+}
+
+.appartment table tr th.large {
+    padding: 10px;
+}
+
+.appartment table tfoot tr {
+    background-color: lightyellow;
+    height: 40px;
+}
+
+.appartment table td {
+	padding: 10px;
+}
+
+.location img {
+    width: 100%;
+}
+
+.welcome p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexcontainer .flexitem h3 {
+    background-color: lightgray;
+    color: white;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 0;
+}
+
+@media print {
+    header img, map{
+        display: none; 
+    }
+}
+
